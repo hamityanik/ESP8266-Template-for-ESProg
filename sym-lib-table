@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ESProg)(type Legacy)(uri ${PROJECTS_PATH}/ESProg_ESP8266_Template_Horizontal/ESProg.lib)(options "")(descr ""))
+)

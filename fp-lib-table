@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri ${PROJECTS_PATH}/ESProg_ESP8266_Template_Horizontal/footprints)(options "")(descr ""))
+)

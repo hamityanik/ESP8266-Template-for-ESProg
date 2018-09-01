@@ -1,0 +1,317 @@
+EESchema Schematic File Version 4
+LIBS:ESProg_ESP8266_Template_Horizontal-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP-12E U1
+U 1 1 5B8DB1FD
+P 5100 3950
+F 0 "U1" H 4650 4700 50  0000 C CNN
+F 1 "ESP-12E" H 5450 4700 50  0000 C CNN
+F 2 "footprints:ESP-12E" H 5100 3950 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 4750 4050 50  0001 C CNN
+	1    5100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESProg:ESProg_Mating_Header P1
+U 1 1 5B8DB2E6
+P 7300 3600
+F 0 "P1" H 7250 3950 50  0000 L CNN
+F 1 "ESProg Mating Header" H 6900 3250 50  0000 L CNN
+F 2 "footprints:ESProg_PinSocket_1x06_P2.54mm_Horizontal" H 7100 3600 50  0001 C CNN
+F 3 "" H 7100 3600 50  0001 C CNN
+	1    7300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5B8DB3D8
+P 3800 3050
+F 0 "R1" H 3859 3096 50  0000 L CNN
+F 1 "4.7k" H 3859 3005 50  0000 L CNN
+F 2 "footprints:R_0603_1608Metric" H 3800 3050 50  0001 C CNN
+F 3 "~" H 3800 3050 50  0001 C CNN
+	1    3800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B8DB4F4
+P 5100 4650
+F 0 "#PWR04" H 5100 4400 50  0001 C CNN
+F 1 "GND" H 5105 4477 50  0000 C CNN
+F 2 "" H 5100 4650 50  0001 C CNN
+F 3 "" H 5100 4650 50  0001 C CNN
+	1    5100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3450 6900 3450
+Wire Wire Line
+	5700 3650 6000 3650
+Wire Wire Line
+	6000 3650 6000 3550
+Wire Wire Line
+	6000 3550 6900 3550
+Wire Wire Line
+	3800 3150 3800 3350
+Wire Wire Line
+	3800 3350 4350 3350
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5B8DB609
+P 3700 2700
+F 0 "#PWR02" H 3700 2550 50  0001 C CNN
+F 1 "+3V3" H 3715 2873 50  0000 C CNN
+F 2 "" H 3700 2700 50  0001 C CNN
+F 3 "" H 3700 2700 50  0001 C CNN
+	1    3700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2700 3700 2750
+Wire Wire Line
+	3700 3550 4500 3550
+$Comp
+L Device:R_Small R3
+U 1 1 5B8DB69A
+P 6050 4450
+F 0 "R3" H 6109 4496 50  0000 L CNN
+F 1 "10k" H 6109 4405 50  0000 L CNN
+F 2 "footprints:R_0603_1608Metric" H 6050 4450 50  0001 C CNN
+F 3 "~" H 6050 4450 50  0001 C CNN
+	1    6050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4250 6050 4250
+Wire Wire Line
+	6050 4250 6050 4350
+$Comp
+L power:GND #PWR06
+U 1 1 5B8DB756
+P 6050 4650
+F 0 "#PWR06" H 6050 4400 50  0001 C CNN
+F 1 "GND" H 6055 4477 50  0000 C CNN
+F 2 "" H 6050 4650 50  0001 C CNN
+F 3 "" H 6050 4650 50  0001 C CNN
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4550 6050 4650
+$Comp
+L Device:R_Small R2
+U 1 1 5B8DB8BC
+P 6000 2900
+F 0 "R2" H 6059 2946 50  0000 L CNN
+F 1 "10k" H 6059 2855 50  0000 L CNN
+F 2 "footprints:R_0603_1608Metric" H 6000 2900 50  0001 C CNN
+F 3 "~" H 6000 2900 50  0001 C CNN
+	1    6000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2950 3800 2750
+Wire Wire Line
+	3800 2750 3700 2750
+Connection ~ 3700 2750
+Wire Wire Line
+	3700 2750 3700 3550
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5B8DBD13
+P 6000 2700
+F 0 "#PWR05" H 6000 2550 50  0001 C CNN
+F 1 "+3V3" H 6015 2873 50  0000 C CNN
+F 2 "" H 6000 2700 50  0001 C CNN
+F 3 "" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3000 6000 3350
+Wire Wire Line
+	6000 3350 5700 3350
+Wire Wire Line
+	6000 2700 6000 2800
+Wire Wire Line
+	6900 3650 6800 3650
+Wire Wire Line
+	6800 3650 6800 2700
+$Comp
+L power:+3V3 #PWR07
+U 1 1 5B8DC4BC
+P 6800 2700
+F 0 "#PWR07" H 6800 2550 50  0001 C CNN
+F 1 "+3V3" H 6815 2873 50  0000 C CNN
+F 2 "" H 6800 2700 50  0001 C CNN
+F 3 "" H 6800 2700 50  0001 C CNN
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3750 6300 3750
+Wire Wire Line
+	6300 3750 6300 3350
+Wire Wire Line
+	6300 3350 6000 3350
+Connection ~ 6000 3350
+Wire Wire Line
+	6900 3850 6800 3850
+Wire Wire Line
+	6800 3850 6800 3950
+$Comp
+L power:GND #PWR08
+U 1 1 5B8DC8CE
+P 6800 3950
+F 0 "#PWR08" H 6800 3700 50  0001 C CNN
+F 1 "GND" H 6805 3777 50  0000 C CNN
+F 2 "" H 6800 3950 50  0001 C CNN
+F 3 "" H 6800 3950 50  0001 C CNN
+	1    6800 3950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 4350
+NoConn ~ 5700 4150
+NoConn ~ 5700 4050
+NoConn ~ 5700 3950
+NoConn ~ 5700 3850
+NoConn ~ 5700 3750
+NoConn ~ 5700 3550
+NoConn ~ 4500 4450
+NoConn ~ 4500 4350
+NoConn ~ 4500 4250
+NoConn ~ 4500 4150
+NoConn ~ 4500 4050
+NoConn ~ 4500 3950
+NoConn ~ 4500 3750
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5B8DEBFD
+P 5100 2700
+F 0 "#PWR03" H 5100 2550 50  0001 C CNN
+F 1 "+3V3" H 5115 2873 50  0000 C CNN
+F 2 "" H 5100 2700 50  0001 C CNN
+F 3 "" H 5100 2700 50  0001 C CNN
+	1    5100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2700 5100 3150
+Wire Wire Line
+	6900 3350 6550 3350
+Wire Wire Line
+	6550 3350 6550 3100
+Wire Wire Line
+	6550 3100 4350 3100
+Wire Wire Line
+	4350 3100 4350 3350
+Connection ~ 4350 3350
+Wire Wire Line
+	4350 3350 4500 3350
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5B8DF9F3
+P 3250 3350
+F 0 "SW1" H 3250 3635 50  0000 C CNN
+F 1 "RESET" H 3250 3544 50  0000 C CNN
+F 2 "footprints:SW_SPST_B3U-1000P" H 3250 3550 50  0001 C CNN
+F 3 "" H 3250 3550 50  0001 C CNN
+	1    3250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3350 3800 3350
+Connection ~ 3800 3350
+Wire Wire Line
+	3050 3350 2900 3350
+Wire Wire Line
+	2900 3350 2900 3500
+$Comp
+L power:GND #PWR01
+U 1 1 5B8E02DB
+P 2900 3500
+F 0 "#PWR01" H 2900 3250 50  0001 C CNN
+F 1 "GND" H 2905 3327 50  0000 C CNN
+F 2 "" H 2900 3500 50  0001 C CNN
+F 3 "" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2750 3850 3600 3850
+Wire Notes Line
+	3600 3850 3600 2950
+Wire Notes Line
+	3600 2950 2750 2950
+Wire Notes Line
+	2750 2950 2750 3850
+Text Notes 2850 3800 0    39   ~ 0
+Optional Reset Button
+Text Label 6350 3100 0    50   ~ 0
+RST
+Text Label 6350 3750 0    50   ~ 0
+GPIO0
+Text Label 6350 3450 0    50   ~ 0
+TXD
+Text Label 6350 3550 0    50   ~ 0
+RXD
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 5B8AC5F4
+P 5400 7050
+F 0 "MH4" H 5500 7096 50  0000 L CNN
+F 1 "M2.5" H 5500 7005 50  0000 L CNN
+F 2 "footprints:MountingHole_2.7mm_M2.5_Pad" H 5400 7050 50  0001 C CNN
+F 3 "~" H 5400 7050 50  0001 C CNN
+	1    5400 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5B8AC5CE
+P 4950 7050
+F 0 "MH2" H 5050 7096 50  0000 L CNN
+F 1 "M2.5" H 5050 7005 50  0000 L CNN
+F 2 "footprints:MountingHole_2.7mm_M2.5_Pad" H 4950 7050 50  0001 C CNN
+F 3 "~" H 4950 7050 50  0001 C CNN
+	1    4950 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 5B8AC5A9
+P 5400 6750
+F 0 "MH3" H 5500 6796 50  0000 L CNN
+F 1 "M2.5" H 5500 6705 50  0000 L CNN
+F 2 "footprints:MountingHole_2.7mm_M2.5_Pad" H 5400 6750 50  0001 C CNN
+F 3 "~" H 5400 6750 50  0001 C CNN
+	1    5400 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5B8AC4E0
+P 4950 6750
+F 0 "MH1" H 5050 6796 50  0000 L CNN
+F 1 "M2.5" H 5050 6705 50  0000 L CNN
+F 2 "footprints:MountingHole_2.7mm_M2.5_Pad" H 4950 6750 50  0001 C CNN
+F 3 "~" H 4950 6750 50  0001 C CNN
+	1    4950 6750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
