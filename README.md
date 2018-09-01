@@ -1,4 +1,4 @@
-# ESProg ESP8266 (ESP-12E) Programming Schematic & PCB Template
+# ESP8266 (ESP-12E) Programming Schematic & PCB Template for ESProg
 ESProg is a programming adapter for ESP8266, ESP8285 and ESP32. It has auto program circuitry like nodemcu, so you don't have to enter bootload mode on target ESP device to upload the program.
 
 ![ESProg Rev1.1](https://raw.githubusercontent.com/hamityanik/ESProg-ESP8266-Template-Horizontal/master/images/ESProg_Rev1.1_and_Demo.jpg)
