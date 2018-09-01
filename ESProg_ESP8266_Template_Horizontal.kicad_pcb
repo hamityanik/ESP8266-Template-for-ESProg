@@ -622,7 +622,7 @@
   (gr_arc (start 157.3 104) (end 157.3 107) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 5BA2F10A))
   (gr_arc (start 108 104) (end 105 104) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 5BA2F0D3))
   (gr_arc (start 108 78) (end 108 75) (angle -90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Programming with\nESProg" (at 154 104) (layer F.SilkS)
+  (gr_text "Programming demo\nwith ESProg" (at 154 104) (layer F.SilkS)
     (effects (font (size 1.2 1.2) (thickness 0.25)) (justify right))
   )
   (gr_line (start 191.75 99.749999) (end 191.75 97.8) (layer F.SilkS) (width 1.2) (tstamp 5B8AB4A7))
